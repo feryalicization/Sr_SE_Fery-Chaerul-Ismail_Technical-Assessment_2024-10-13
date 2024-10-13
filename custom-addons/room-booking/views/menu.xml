@@ -1,0 +1,23 @@
+<odoo>
+    <data>
+
+        <menuitem id="menu_root" name="Root Menu" sequence="1"/>
+
+        <menuitem id="menu_ruangan_management" 
+                  name="Ruangan Management" 
+                  parent="menu_root" 
+                  sequence="10"/>
+
+        <menuitem id="menu_master_ruangan" 
+                  name="Master Ruangan" 
+                  parent="menu_ruangan_management" 
+                  action="action_master_ruangan" 
+                  sequence="1"/>
+
+        <menuitem id="menu_pemesanan_ruangan" 
+                  name="Pemesanan Ruangan" 
+                  parent="menu_ruangan_management" 
+                  action="action_pemesanan_ruangan" 
+                  sequence="2"/>
+    </data>
+</odoo>

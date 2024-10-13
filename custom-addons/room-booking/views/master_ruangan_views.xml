@@ -1,0 +1,47 @@
+<odoo>
+    <data>
+        <!-- Master Ruangan Tree View -->
+        <record id="view_master_ruangan_tree" model="ir.ui.view">
+            <field name="name">master.ruangan.tree</field>
+            <field name="model">master.ruangan</field>
+            <field name="arch" type="xml">
+                <tree>
+                    <field name="name"/>
+                    <field name="tipe"/>
+                    <field name="lokasi"/>
+                    <field name="kapasitas"/>
+                </tree>
+            </field>
+        </record>
+
+        <!-- Master Ruangan Form View -->
+        <record id="view_master_ruangan_form" model="ir.ui.view">
+            <field name="name">master.ruangan.form</field>
+            <field name="model">master.ruangan</field>
+            <field name="arch" type="xml">
+                <form>
+                    <sheet>
+                        <group>
+                            <field name="name" required="1"/>
+                            <field name="tipe" required="1"/>
+                            <field name="lokasi" required="1"/>
+                            <field name="foto" required="1"/>
+                            <field name="kapasitas" required="1"/>
+                            <field name="keterangan"/>
+                        </group>
+                    </sheet>
+                </form>
+            </field>
+        </record>
+
+        <!-- Action for Master Ruangan -->
+        <record id="action_master_ruangan" model="ir.actions.act_window">
+            <field name="name">Master Ruangan</field>
+            <field name="res_model">master.ruangan</field>
+            <field name="view_mode">tree,form</field>
+        </record>
+
+        <!-- Menu for Master Ruangan -->
+        <menuitem id="menu_master_ruangan" name="Master Ruangan" action="action_master_ruangan" parent="menu_root" sequence="1"/>
+    </data>
+</odoo>
