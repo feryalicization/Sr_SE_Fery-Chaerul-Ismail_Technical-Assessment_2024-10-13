@@ -11,10 +11,10 @@
     "depends": ["base"],  
     "data": [
         "views/data.xml",
-        # "security/ir.model.access.csv",  # Access rights file
-        # "views/master_ruangan_views.xml",  # Views for Master Ruangan
-        # "views/pemesanan_ruangan_views.xml",  # Views for Pemesanan Ruangan
-        # "views/menu.xml",  # Menu items
+        "security/ir.model.access.csv",  
+        "views/master_ruangan_views.xml",  
+        "views/pemesanan_ruangan_views.xml",  
+        "views/menu.xml",  
     ],
     "installable": True,  
     "application": True,  
